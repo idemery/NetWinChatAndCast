@@ -29,6 +29,8 @@ Run the SecuredChat.exe from the output directory.
  ## Features
  - As a client, you can now chat and cast your screen to other clients.
  - As a client, you can protect your messages with a password (Remoot > Preferences > Enable Encryption). Only clients with the same password can decrypt your messages.
+ - See when a client is typing.
+ - Change the screen casting interval (increase it for better performance on weak machines).
   
  ## Shortcuts
  - `Ctrl + S` to send a screenshot.
