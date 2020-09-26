@@ -16,15 +16,15 @@ Run the SecuredChat.exe from the output directory.
     - Click Connect
     - Click Yes.
 2. Run one instance of the application as a client:
-  - Open SecuredChat.exe
-  - Click Remoot > Preferences > Set Custom User Name
-  - Enter *User 1*
-  - Click Remoot > Connect
-  - Choose No.
-  - Enter *localhost*.
+    - Open SecuredChat.exe
+    - Click Remoot > Preferences > Set Custom User Name
+    - Enter *User 1*
+    - Click Remoot > Connect
+    - Choose No.
+    - Enter *localhost*.
 3. Run another instance as a client on a different machine:
-  - Make sure port **8080** is open on the host machine.
-  - Repeat steps on point 2 above. On the last step instead of *localhost*, enter the IP of the machine where the host instance is running.
+    - Make sure port **8080** is open on the host machine.
+    - Repeat steps on point 2 above. On the last step instead of *localhost*, enter the IP of the machine where the host instance is running.
  
  ## Features
  - As a client, you can now chat and cast your screen to other clients.
