@@ -2,7 +2,7 @@
 .NET Windows Forms Chat and Screen Casting using WCF Duplex
 This application is a host and a client. You can run the host on one machine and run multiple clients on same/different machines.
 
-*This is not a production ready application, it's a showcase on how to screen chast and transmit data using WCF Duplex. However you may use it with your team in a work environment.*
+*Note: This is not a production ready application, it's a showcase on how to screen chast and transmit data using WCF Duplex. However you may use it with your team in a work environment.*
 
 ## How to run it
 This application is built on .NET Framework 4.5.
