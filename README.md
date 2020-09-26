@@ -1,4 +1,4 @@
-# NetWinChatAndCast
+# .NET Chat and Cast
 .NET Windows Forms Chat and Screen Casting using WCF Duplex
 This application is a host and a client. You can run the host on one machine and run multiple clients on same/different machines.
 
