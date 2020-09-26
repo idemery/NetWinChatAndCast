@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2863F2BB-FA23-437C-9983-563FB201A878}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SecuredChat</RootNamespace>
+    <AssemblyName>REMOOT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>chat.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientHelper\Capturing\API.cs" />
+    <Compile Include="ClientHelper\Capturing\CaptureDesktop.cs" />
+    <Compile Include="ClientHelper\Controls\Desktop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientHelper\Controls\Desktop.Designer.cs">
+      <DependentUpon>Desktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientHelper\DesktopCompression.cs" />
+    <Compile Include="ClientHelper\DesktopHandler.cs" />
+    <Compile Include="ClientHelper\Global\Global.cs" />
+    <Compile Include="ClientHelper\Imaging\ImageBytesConverter.cs" />
+    <Compile Include="ClientHelper\Imaging\ImageXOR.cs" />
+    <Compile Include="ClientHelper\RemoteAction\MouseAction.cs" />
+    <Compile Include="ClientHelper\RemoteAction\SimulateAction.cs" />
+    <Compile Include="DarkUI\Collections\ObservableList.cs" />
+    <Compile Include="DarkUI\Collections\ObservableListModified.cs" />
+    <Compile Include="DarkUI\Config\Colors.cs" />
+    <Compile Include="DarkUI\Config\Consts.cs" />
+    <Compile Include="DarkUI\Controls\DarkButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkButtonStyle.cs" />
+    <Compile Include="DarkUI\Controls\DarkCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkContentAlignment.cs" />
+    <Compile Include="DarkUI\Controls\DarkContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkControlState.cs" />
+    <Compile Include="DarkUI\Controls\DarkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkListItem.cs" />
+    <Compile Include="DarkUI\Controls\DarkListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkScrollBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkScrollOrientation.cs" />
+    <Compile Include="DarkUI\Controls\DarkScrollView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkSectionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkTitle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\DarkTreeNode.cs" />
+    <Compile Include="DarkUI\Controls\DarkTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Controls\ScrollValueEventArgs.cs" />
+    <Compile Include="DarkUI\Docking\DarkDockArea.cs" />
+    <Compile Include="DarkUI\Docking\DarkDockContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Docking\DarkDockGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Docking\DarkDockPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Docking\DarkDockRegion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Docking\DarkDockSplitter.cs" />
+    <Compile Include="DarkUI\Docking\DarkDockTab.cs" />
+    <Compile Include="DarkUI\Docking\DarkDockTabArea.cs" />
+    <Compile Include="DarkUI\Docking\DarkDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Docking\DarkSplitterType.cs" />
+    <Compile Include="DarkUI\Docking\DarkToolWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Docking\DockContentEventArgs.cs" />
+    <Compile Include="DarkUI\Docking\DockDropArea.cs" />
+    <Compile Include="DarkUI\Docking\DockDropCollection.cs" />
+    <Compile Include="DarkUI\Docking\DockGroupState.cs" />
+    <Compile Include="DarkUI\Docking\DockInsertType.cs" />
+    <Compile Include="DarkUI\Docking\DockPanelState.cs" />
+    <Compile Include="DarkUI\Docking\DockRegionState.cs" />
+    <Compile Include="DarkUI\Extensions\BitmapExtensions.cs" />
+    <Compile Include="DarkUI\Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="DarkUI\Forms\DarkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Forms\DarkDialog.Designer.cs">
+      <DependentUpon>DarkDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DarkUI\Forms\DarkDialogButton.cs" />
+    <Compile Include="DarkUI\Forms\DarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Forms\DarkMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Forms\DarkMessageBox.Designer.cs">
+      <DependentUpon>DarkMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DarkUI\Forms\DarkMessageBoxIcon.cs" />
+    <Compile Include="DarkUI\Forms\DarkTranslucentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarkUI\Icons\DockIcons1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DockIcons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DarkUI\Icons\MenuIcons1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuIcons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DarkUI\Icons\MessageBoxIcons1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageBoxIcons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DarkUI\Icons\ScrollIcons1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScrollIcons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DarkUI\Icons\TreeViewIcons1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TreeViewIcons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DarkUI\Renderers\DarkMenuRenderer.cs" />
+    <Compile Include="DarkUI\Renderers\DarkToolStripRenderer.cs" />
+    <Compile Include="DarkUI\Win32\ControlScrollFilter.cs" />
+    <Compile Include="DarkUI\Win32\DockContentDragFilter.cs" />
+    <Compile Include="DarkUI\Win32\DockResizeFilter.cs" />
+    <Compile Include="DarkUI\Win32\Native.cs" />
+    <Compile Include="DarkUI\Win32\WindowsMessages.cs" />
+    <Compile Include="Extensions\FormFlash.cs" />
+    <Compile Include="Extensions\RichTextBoxExtensions.cs" />
+    <Compile Include="Forms\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAbout.designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCast.designer.cs">
+      <DependentUpon>FormCast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChat.Designer.cs">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ICastForm.cs" />
+    <Compile Include="Forms\IChatForm.cs" />
+    <Compile Include="MemCompressor\Consts.cs" />
+    <Compile Include="MemCompressor\Deflator.cs" />
+    <Compile Include="MemCompressor\Inflator.cs" />
+    <Compile Include="MemCompressor\Utils.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AesHelper.cs" />
+    <Compile Include="Services\ChatService.cs" />
+    <Compile Include="Services\ClientService.cs" />
+    <Compile Include="Services\HostService.cs" />
+    <Compile Include="Services\IClientService.cs" />
+    <Compile Include="Services\IHostService.cs" />
+    <Compile Include="Services\Models\ChatJoin.cs" />
+    <Compile Include="Services\Models\ChatLeave.cs" />
+    <Compile Include="Services\Models\ChatMessage.cs" />
+    <Compile Include="Services\Models\ClientModel.cs" />
+    <Compile Include="Services\Models\DataModel.cs" />
+    <Compile Include="Services\Proxy.cs" />
+    <EmbeddedResource Include="ClientHelper\Controls\Desktop.resx">
+      <DependentUpon>Desktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkUI\Forms\DarkDialog.resx">
+      <DependentUpon>DarkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkUI\Forms\DarkMessageBox.resx">
+      <DependentUpon>DarkMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkUI\Icons\DockIcons.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DockIcons1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>DarkUI.Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkUI\Icons\MenuIcons.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenuIcons1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>DarkUI.Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkUI\Icons\MessageBoxIcons.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MessageBoxIcons1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>DarkUI.Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkUI\Icons\ScrollIcons.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScrollIcons1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>DarkUI.Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkUI\Icons\TreeViewIcons.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TreeViewIcons1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>DarkUI.Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCast.resx">
+      <DependentUpon>FormCast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChat.resx">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chat.ico" />
+    <Content Include="DarkUI\Resources\active-inactive-close.png" />
+    <Content Include="DarkUI\Resources\arrow.png" />
+    <Content Include="DarkUI\Resources\close-selected.png" />
+    <Content Include="DarkUI\Resources\close.png" />
+    <Content Include="DarkUI\Resources\error.png" />
+    <Content Include="DarkUI\Resources\grip.png" />
+    <Content Include="DarkUI\Resources\inactive-close-selected.png" />
+    <Content Include="DarkUI\Resources\inactive-close.png" />
+    <Content Include="DarkUI\Resources\info.png" />
+    <Content Include="DarkUI\Resources\node_closed_empty.png" />
+    <Content Include="DarkUI\Resources\node_closed_full.png" />
+    <Content Include="DarkUI\Resources\node_open.png" />
+    <Content Include="DarkUI\Resources\node_open_empty.png" />
+    <Content Include="DarkUI\Resources\scrollbar_arrow.png" />
+    <Content Include="DarkUI\Resources\scrollbar_arrow_clicked.png" />
+    <Content Include="DarkUI\Resources\scrollbar_arrow_hot.png" />
+    <Content Include="DarkUI\Resources\scrollbar_arrow_standard.png" />
+    <Content Include="DarkUI\Resources\tick.png" />
+    <Content Include="DarkUI\Resources\tw_active_close.png" />
+    <Content Include="DarkUI\Resources\tw_active_close_selected.png" />
+    <Content Include="DarkUI\Resources\tw_close.png" />
+    <Content Include="DarkUI\Resources\tw_close_selected.png" />
+    <Content Include="DarkUI\Resources\warning.png" />
+    <EmbeddedResource Include="Resources\application_16x.png" />
+    <EmbeddedResource Include="Resources\Close_16xLG.png" />
+    <EmbeddedResource Include="Resources\properties_16xLG.png" />
+    <EmbeddedResource Include="Resources\chat.ico" />
+    <EmbeddedResource Include="Resources\blue.png" />
+    <EmbeddedResource Include="Resources\connect.png" />
+    <EmbeddedResource Include="Resources\disconnect.png" />
+    <EmbeddedResource Include="Resources\green.png" />
+    <EmbeddedResource Include="Resources\red.png" />
+    <EmbeddedResource Include="Resources\startshare.png" />
+    <EmbeddedResource Include="Resources\stopshare.png" />
+    <EmbeddedResource Include="Resources\Me.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
