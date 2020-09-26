@@ -2,6 +2,8 @@
 .NET Windows Forms Chat and Screen Casting using WCF Duplex
 This application is a host and a client. You can run the host on one machine and run multiple clients on same/different machines.
 
+![.NET Win Chat and Cast](./Clients.PNG)
+
 *Note: This is not a production ready application, it's a showcase on how to screen chast and transmit data using WCF Duplex. However you may use it with your team in a work environment.*
 
 ## How to run it
@@ -40,13 +42,13 @@ Run the SecuredChat.exe from the output directory.
  - `Ctrl + E` to exit.
  
  ## To Do
-- Sharing files with drag drop
-- Share screen (or screenshot) with a specific user by right clicking on his name
-- When in hack mode change background color to incoming font color
-- When in hack mode reset width of clients listbox
-- Messages should be listview instead of richtextbox 
-- Right click any message to do actions
-- Option to save chat to txt files
+- [ ] Sharing files with drag drop
+- [ ] Share screen (or screenshot) with a specific user by right clicking on his name
+- [ ] When in hack mode change background color to incoming font color
+- [ ] When in hack mode reset width of clients listbox
+- [ ] Messages should be listview instead of richtextbox 
+- [ ] Right click any message to do actions
+- [ ] Option to save chat to txt files
  
  ## Contribute
  Contributions are more than welcome, fork this repository, commit your changes, and create a pull request.
