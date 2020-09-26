@@ -73,12 +73,14 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 440);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 679);
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(753, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1130, 32);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.Paint += new System.Windows.Forms.PaintEventHandler(this.StatusStrip1_Paint);
@@ -86,21 +88,23 @@
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(39, 17);
+            this.statusLabel.Size = new System.Drawing.Size(60, 25);
             this.statusLabel.Text = "Status";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuStrip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.remootToolStripMenuItem,
             this.actionsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(753, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1130, 35);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Tag = "";
             this.menuStrip1.Text = "menuStrip1";
@@ -116,13 +120,13 @@
             this.exitToolStripMenuItem});
             this.remootToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.remootToolStripMenuItem.Name = "remootToolStripMenuItem";
-            this.remootToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.remootToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.remootToolStripMenuItem.Text = "Remoot";
             // 
             // connectToolStripMenuItem
             // 
             this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
-            this.connectToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.connectToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.connectToolStripMenuItem.Tag = "Disconnected";
             this.connectToolStripMenuItem.Text = "Connect";
             this.connectToolStripMenuItem.Click += new System.EventHandler(this.connectToolStripMenuItem_Click);
@@ -130,7 +134,7 @@
             // disconnectToolStripMenuItem
             // 
             this.disconnectToolStripMenuItem.Name = "disconnectToolStripMenuItem";
-            this.disconnectToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.disconnectToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.disconnectToolStripMenuItem.Tag = "Connected";
             this.disconnectToolStripMenuItem.Text = "Disconnect";
             this.disconnectToolStripMenuItem.Click += new System.EventHandler(this.disconnectToolStripMenuItem_Click);
@@ -138,7 +142,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(132, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(201, 6);
             // 
             // settingsToolStripMenuItem
             // 
@@ -149,13 +153,13 @@
             this.changeScreencastIntervalToolStripMenuItem,
             this.setMyNameToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.settingsToolStripMenuItem.Text = "Preferences";
             // 
             // enableEncryptionToolStripMenuItem
             // 
             this.enableEncryptionToolStripMenuItem.Name = "enableEncryptionToolStripMenuItem";
-            this.enableEncryptionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.enableEncryptionToolStripMenuItem.Size = new System.Drawing.Size(325, 34);
             this.enableEncryptionToolStripMenuItem.Text = "Enable Encryption";
             this.enableEncryptionToolStripMenuItem.Click += new System.EventHandler(this.enableEncryptionToolStripMenuItem_Click);
             // 
@@ -164,38 +168,38 @@
             this.disableEncryptionToolStripMenuItem.Checked = true;
             this.disableEncryptionToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.disableEncryptionToolStripMenuItem.Name = "disableEncryptionToolStripMenuItem";
-            this.disableEncryptionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.disableEncryptionToolStripMenuItem.Size = new System.Drawing.Size(325, 34);
             this.disableEncryptionToolStripMenuItem.Text = "Disable Encryption";
             this.disableEncryptionToolStripMenuItem.Click += new System.EventHandler(this.disableEncryptionToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(213, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(322, 6);
             // 
             // changeScreencastIntervalToolStripMenuItem
             // 
             this.changeScreencastIntervalToolStripMenuItem.Name = "changeScreencastIntervalToolStripMenuItem";
-            this.changeScreencastIntervalToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.changeScreencastIntervalToolStripMenuItem.Size = new System.Drawing.Size(325, 34);
             this.changeScreencastIntervalToolStripMenuItem.Text = "Change Screencast Interval";
             this.changeScreencastIntervalToolStripMenuItem.Click += new System.EventHandler(this.changeScreencastIntervalToolStripMenuItem_Click);
             // 
             // setMyNameToolStripMenuItem
             // 
             this.setMyNameToolStripMenuItem.Name = "setMyNameToolStripMenuItem";
-            this.setMyNameToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.setMyNameToolStripMenuItem.Size = new System.Drawing.Size(325, 34);
             this.setMyNameToolStripMenuItem.Text = "Set Custom User Name";
             this.setMyNameToolStripMenuItem.Click += new System.EventHandler(this.SetMyNameToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(132, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(201, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -208,13 +212,13 @@
             this.showHideDesktopFormToolStripMenuItem});
             this.actionsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.actionsToolStripMenuItem.Name = "actionsToolStripMenuItem";
-            this.actionsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.actionsToolStripMenuItem.Size = new System.Drawing.Size(87, 29);
             this.actionsToolStripMenuItem.Text = "Actions";
             // 
             // sendScreenShotToolStripMenuItem
             // 
             this.sendScreenShotToolStripMenuItem.Name = "sendScreenShotToolStripMenuItem";
-            this.sendScreenShotToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.sendScreenShotToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
             this.sendScreenShotToolStripMenuItem.Tag = "Connected";
             this.sendScreenShotToolStripMenuItem.Text = "Send Screen Shot";
             this.sendScreenShotToolStripMenuItem.Click += new System.EventHandler(this.sendScreenShotToolStripMenuItem_Click);
@@ -225,28 +229,28 @@
             this.startToolStripMenuItem,
             this.stopToolStripMenuItem});
             this.startScreenCastToolStripMenuItem.Name = "startScreenCastToolStripMenuItem";
-            this.startScreenCastToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.startScreenCastToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
             this.startScreenCastToolStripMenuItem.Tag = "Connected";
             this.startScreenCastToolStripMenuItem.Text = "Screen Cast";
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(151, 34);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.StartToolStripMenuItem_Click);
             // 
             // stopToolStripMenuItem
             // 
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(151, 34);
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.StopToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(179, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(273, 6);
             // 
             // showHideDesktopFormToolStripMenuItem
             // 
@@ -254,20 +258,20 @@
             this.showToolStripMenuItem,
             this.hideToolStripMenuItem});
             this.showHideDesktopFormToolStripMenuItem.Name = "showHideDesktopFormToolStripMenuItem";
-            this.showHideDesktopFormToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.showHideDesktopFormToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
             this.showHideDesktopFormToolStripMenuItem.Text = "Screen Cast Window";
             // 
             // showToolStripMenuItem
             // 
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
             this.showToolStripMenuItem.Text = "Show";
             this.showToolStripMenuItem.Click += new System.EventHandler(this.ShowToolStripMenuItem_Click);
             // 
             // hideToolStripMenuItem
             // 
             this.hideToolStripMenuItem.Name = "hideToolStripMenuItem";
-            this.hideToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.hideToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
             this.hideToolStripMenuItem.Text = "Hide";
             this.hideToolStripMenuItem.Click += new System.EventHandler(this.HideToolStripMenuItem_Click);
             // 
@@ -277,13 +281,13 @@
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -291,15 +295,16 @@
             // 
             this.tableLayoutPanelMain.ColumnCount = 2;
             this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanelMain.Controls.Add(this.listBoxClients, 1, 0);
             this.tableLayoutPanelMain.Controls.Add(this.tableLayoutPanelChatBoxText, 0, 0);
             this.tableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 24);
+            this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 35);
+            this.tableLayoutPanelMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanelMain.Name = "tableLayoutPanelMain";
             this.tableLayoutPanelMain.RowCount = 1;
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMain.Size = new System.Drawing.Size(753, 416);
+            this.tableLayoutPanelMain.Size = new System.Drawing.Size(1130, 644);
             this.tableLayoutPanelMain.TabIndex = 2;
             // 
             // listBoxClients
@@ -310,10 +315,11 @@
             this.listBoxClients.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxClients.ForeColor = System.Drawing.Color.Gainsboro;
             this.listBoxClients.FormattingEnabled = true;
-            this.listBoxClients.ItemHeight = 15;
-            this.listBoxClients.Location = new System.Drawing.Point(556, 3);
+            this.listBoxClients.ItemHeight = 24;
+            this.listBoxClients.Location = new System.Drawing.Point(834, 5);
+            this.listBoxClients.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxClients.Name = "listBoxClients";
-            this.listBoxClients.Size = new System.Drawing.Size(194, 410);
+            this.listBoxClients.Size = new System.Drawing.Size(292, 634);
             this.listBoxClients.TabIndex = 0;
             this.listBoxClients.Tag = "Connected";
             // 
@@ -324,36 +330,39 @@
             this.tableLayoutPanelChatBoxText.Controls.Add(this.tableLayoutPanelMsg, 0, 1);
             this.tableLayoutPanelChatBoxText.Controls.Add(this.richTextBoxMsgs, 0, 0);
             this.tableLayoutPanelChatBoxText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelChatBoxText.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelChatBoxText.Location = new System.Drawing.Point(4, 5);
+            this.tableLayoutPanelChatBoxText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanelChatBoxText.Name = "tableLayoutPanelChatBoxText";
             this.tableLayoutPanelChatBoxText.RowCount = 2;
             this.tableLayoutPanelChatBoxText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelChatBoxText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanelChatBoxText.Size = new System.Drawing.Size(547, 410);
+            this.tableLayoutPanelChatBoxText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tableLayoutPanelChatBoxText.Size = new System.Drawing.Size(822, 634);
             this.tableLayoutPanelChatBoxText.TabIndex = 1;
             // 
             // tableLayoutPanelMsg
             // 
             this.tableLayoutPanelMsg.ColumnCount = 2;
             this.tableLayoutPanelMsg.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMsg.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanelMsg.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
             this.tableLayoutPanelMsg.Controls.Add(this.buttonSend, 1, 0);
             this.tableLayoutPanelMsg.Controls.Add(this.textBoxMsg, 0, 0);
             this.tableLayoutPanelMsg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelMsg.Location = new System.Drawing.Point(3, 375);
+            this.tableLayoutPanelMsg.Location = new System.Drawing.Point(4, 581);
+            this.tableLayoutPanelMsg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanelMsg.Name = "tableLayoutPanelMsg";
             this.tableLayoutPanelMsg.RowCount = 1;
             this.tableLayoutPanelMsg.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMsg.Size = new System.Drawing.Size(541, 32);
+            this.tableLayoutPanelMsg.Size = new System.Drawing.Size(814, 48);
             this.tableLayoutPanelMsg.TabIndex = 0;
             // 
             // buttonSend
             // 
             this.buttonSend.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonSend.Location = new System.Drawing.Point(424, 3);
+            this.buttonSend.Location = new System.Drawing.Point(638, 5);
+            this.buttonSend.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonSend.Size = new System.Drawing.Size(114, 26);
+            this.buttonSend.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.buttonSend.Size = new System.Drawing.Size(172, 38);
             this.buttonSend.TabIndex = 0;
             this.buttonSend.Tag = "Connected";
             this.buttonSend.Text = "Send";
@@ -366,9 +375,10 @@
             this.textBoxMsg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxMsg.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMsg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxMsg.Location = new System.Drawing.Point(3, 3);
+            this.textBoxMsg.Location = new System.Drawing.Point(4, 5);
+            this.textBoxMsg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxMsg.Name = "textBoxMsg";
-            this.textBoxMsg.Size = new System.Drawing.Size(415, 26);
+            this.textBoxMsg.Size = new System.Drawing.Size(626, 36);
             this.textBoxMsg.TabIndex = 1;
             this.textBoxMsg.Tag = "Connected";
             this.textBoxMsg.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMsg_KeyUp);
@@ -380,9 +390,10 @@
             this.richTextBoxMsgs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxMsgs.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxMsgs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.richTextBoxMsgs.Location = new System.Drawing.Point(3, 3);
+            this.richTextBoxMsgs.Location = new System.Drawing.Point(4, 5);
+            this.richTextBoxMsgs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoxMsgs.Name = "richTextBoxMsgs";
-            this.richTextBoxMsgs.Size = new System.Drawing.Size(541, 366);
+            this.richTextBoxMsgs.Size = new System.Drawing.Size(814, 566);
             this.richTextBoxMsgs.TabIndex = 1;
             this.richTextBoxMsgs.Tag = "Connected";
             this.richTextBoxMsgs.Text = "";
@@ -397,19 +408,20 @@
             // 
             // FormChat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 462);
+            this.ClientSize = new System.Drawing.Size(1130, 711);
             this.Controls.Add(this.tableLayoutPanelMain);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(600, 400);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimumSize = new System.Drawing.Size(889, 585);
             this.Name = "FormChat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Remoot";
+            this.Text = "Secured Chat";
             this.Load += new System.EventHandler(this.FormChat_Load);
             this.Resize += new System.EventHandler(this.FormChat_Resize);
             this.statusStrip1.ResumeLayout(false);
