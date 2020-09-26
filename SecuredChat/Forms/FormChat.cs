@@ -174,10 +174,6 @@ namespace SecuredChat
                 return;
             }
 
-            //var result = MessageBox.Show("Do you want to host the conversation or connect to a host?\r\nClick Yes to start a local host.\r\nClick No to connect a remote host.",
-            //    "Is a Host?",
-            //    MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-
             var result = DarkMessageBox.ShowInformation("Do you want to host the conversation or connect to a host?\r\nClick Yes to start a local host.\r\nClick No to connect a remote host.",
                 "Is a Host?", DarkDialogButton.YesNoCancel);
 
