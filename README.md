@@ -11,10 +11,10 @@ Run the SecuredChat.exe from the output directory.
 
 ## How to use it
 1. Run one instance of the application as a host: 
-  - Open SecuredChat.exe
-  - Click Remoot
-  - Click Connect
-  - Click Yes.
+    - Open SecuredChat.exe
+    - Click Remoot
+    - Click Connect
+    - Click Yes.
 2. Run one instance of the application as a client:
   - Open SecuredChat.exe
   - Click Remoot > Preferences > Set Custom User Name
