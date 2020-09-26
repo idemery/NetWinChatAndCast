@@ -643,12 +643,3 @@ exit";
         }
     }
 }
-// sharing files with drag drop
-// share screen (or screenshot) with one only by right click on his name
-// when in hack mode change background color to incoming font color
-// when in hack mode reset width of clients listbox
-// proxy.send must be asynchronous
-// messages should be listview instead of richtextbox and encrypted messages should be decrypted 
-// right click any message to do actions
-// save chat to txt files
-// notifications are not appearing
